@@ -1,13 +1,13 @@
 # the name of the target operating system
-set(CMAKE_SYSTEM_NAME Windows)
+set(CMAKE_SYSTEM_NAME Linux)
+set(CMAKE_SYSTEM_PROCESSOR aarch64)
 
 # which compilers to use for C and C++
-set(CMAKE_C_COMPILER   i586-mingw32msvc-gcc)
-set(CMAKE_CXX_COMPILER i586-mingw32msvc-g++)
+set(CMAKE_C_COMPILER   "aarch64-linux-gnu-gcc")
+set(CMAKE_CXX_COMPILER "aarch64-linux-gnu-g++")
 
 # where is the target environment located
-set(CMAKE_FIND_ROOT_PATH  /usr/i586-mingw32msvc
-    /home/alex/mingw-install)
+set(CMAKE_FIND_ROOT_PATH  ${PROJECT_SOURCE_DIR}/compiler/gcc-arm-8.3-2019.03-x86_64-aarch64-linux-gnu)
 
 # adjust the default behavior of the FIND_XXX() commands:
 # search programs in the host environment
